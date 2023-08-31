@@ -2,8 +2,8 @@
 {
     public class JobType
     {
-        public string Remote { get; set; }
-        public string Hybrid { get; set; }
-        public string Onsite { get; set; }
+        public string FullTime { get; set; }
+        public string PartTime { get; set; }
+        public string Contract { get; set; }
     }
 }

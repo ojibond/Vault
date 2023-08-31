@@ -6,16 +6,12 @@ using System.Threading.Tasks;
 
 namespace Vault.Entities.DbSet
 {
-    public class Employees : BaseEntity
+    public class JobDescription : BaseEntity
     {
+        public int Id { get; set; }
         public int CustomerId { get; set; }
-        public string FirstName { get; set; } = string.Empty;
-        public string LastName { get; set; } = string.Empty;        
-        public List<JobTitle> JobTitle { get; set; }
-        public List<JobType> JobType { get; set; }
         public List<Roles> Role { get; set; }
 
         public virtual Customer? Customer { get; set; }
-
     }
 }
