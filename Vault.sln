@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vault.Api", "Vault.Api\Vault.Api.csproj", "{251220DB-885F-4E42-A8A8-143B4472FF73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vault.Entities", "Vault.Entities\Vault.Entities.csproj", "{BC6D0E58-1D30-4CB7-AE1D-EFFCA04CBCA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vault.Dataservice", "Vault.DataService\Vault.Dataservice.csproj", "{87A712A8-7ECF-410B-899E-A32A691AA184}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{251220DB-885F-4E42-A8A8-143B4472FF73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{251220DB-885F-4E42-A8A8-143B4472FF73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{251220DB-885F-4E42-A8A8-143B4472FF73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{251220DB-885F-4E42-A8A8-143B4472FF73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC6D0E58-1D30-4CB7-AE1D-EFFCA04CBCA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC6D0E58-1D30-4CB7-AE1D-EFFCA04CBCA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC6D0E58-1D30-4CB7-AE1D-EFFCA04CBCA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC6D0E58-1D30-4CB7-AE1D-EFFCA04CBCA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87A712A8-7ECF-410B-899E-A32A691AA184}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87A712A8-7ECF-410B-899E-A32A691AA184}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87A712A8-7ECF-410B-899E-A32A691AA184}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87A712A8-7ECF-410B-899E-A32A691AA184}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
