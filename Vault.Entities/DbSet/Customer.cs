@@ -8,18 +8,16 @@ namespace Vault.Entities.DbSet
 {
     public class Customer : BaseEntity
     {
-        public Customer()
-        {
-            Employees = new HashSet<Employees>();
-            JobDescription = new HashSet<JobDescription>();
-        }
+      
         public int CustomerId { get; set; }
+        public int EmployeeId { get; set; }
         public string FirstName { get; set; } = string.Empty;
         public string LastName { get; set; } = string.Empty;
-        public string Address { get; set; }
-        public int City { get; set; }
+        public string? City { get; set; }
+        public byte[]? Photo { get; set; }
 
-        public virtual ICollection<Employees> Employees { get; set; }
-        public virtual ICollection<JobDescription> JobDescription { get; set; }
+        //Customer is only assigned to one employee
+        public virtual Employee Employees { get; set; }
+
     }
 }

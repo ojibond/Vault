@@ -6,16 +6,22 @@ using System.Threading.Tasks;
 
 namespace Vault.Entities.DbSet
 {
-    public class Employees : BaseEntity
+    public class Employee : BaseEntity
     {
-        public int CustomerId { get; set; }
+        public Employee()
+        {
+            Customers = new HashSet<Customer>();
+        }
+        public int EmployeeId { get; set; }
         public string FirstName { get; set; } = string.Empty;
         public string LastName { get; set; } = string.Empty;        
         public List<JobTitle> JobTitle { get; set; }
         public List<JobType> JobType { get; set; }
         public List<Roles> Role { get; set; }
 
-        public virtual Customer? Customer { get; set; }
+        //Employee could be assigned to multiple customers and have multiple JDs
+        public virtual ICollection<Customer> Customers { get; set; }
+
 
     }
 }

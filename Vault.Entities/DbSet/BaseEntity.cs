@@ -8,7 +8,6 @@ namespace Vault.Entities.DbSet
 {
     public class BaseEntity
     {
-        public int EmployeeId { get; set; }
         public DateTime StartDate { get; set; } = DateTime.UtcNow;
         public DateTime EndDate { get; set; } = DateTime.UtcNow;
         public List<JobStatus> JobStatus { get; set; }
